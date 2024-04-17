@@ -10,7 +10,7 @@ html,body{
 
 #hamburger:hover #line2{
     transform: rotate(90deg);
-    position: absolute;
+    position: absolute;    
 }
 #hamburger:hover #hamburger-in{
     width: 4rem;    

@@ -9,7 +9,7 @@ gsap.from("#landingImgContainer", {
         pin: true,
         start: "top 0",
         stop: "top -50%",
-        markers: true,
+        // markers: true,
     }
 })
 
@@ -57,6 +57,56 @@ card.addEventListener('mousemove', function (dets) {
     })
 })
 
-// ------------ PAGE 3 ---------------------
+gsap.from(".card", {
+    opacity: 0,
+    stagger: 0.3,
+    y: 100,
+    scrollTrigger: {
+        scroller: "body",
+        trigger: ".card",
+        start: 'top 80%',
+        end: "top 65%",
+        scrub: 2
+    }
+})
 
+// ------------ PAGE 3 ---------------------
+gsap.to("#page3 #bg-1", {
+    scale: 0.8,
+    positions: "sticky",    
+    scrollTrigger: {
+        trigger: "#bg-1",
+        scroller: "body",
+        start: "top 5%",
+        end: "top -50%",
+        pin: true,
+        scrub: true,
+        markers: true
+    }
+})
+
+gsap.to("#page3 #bg-2", {
+    scale: 0.8,
+    scrollTrigger: {
+        trigger: "#bg-2",
+        scroller: "body",
+        start: "top 0",
+        end: "top -50%",
+        pin: true,
+        scrub: true,
+        markers: true
+    }
+})
+gsap.to("#page3 #bg-3", {
+    scale: 0.8,
+    scrollTrigger: {
+        trigger: "#bg-3",
+        scroller: "body",
+        start: "top 0",
+        end: "top -50%",
+        pin: true,
+        scrub: true,
+        markers: true
+    }
+})
 
