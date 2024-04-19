@@ -110,3 +110,21 @@ gsap.to("#page3 #bg-3", {
     }
 })
 
+// ------------ SWIPER JS - Pg3 ------------
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        // type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    // Slides per view
+    slidesPerView: 2.5,
+    spaceBetween: 100,
+    clickable: true,
+
+    grabCursor: true,
+});
