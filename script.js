@@ -15,7 +15,7 @@ gsap.from("#landingImgContainer", {
 
 // ------------ PAGE 2 ---------------------
 const crsr = document.querySelector("#crsr");
-const cards = document.querySelectorAll("#card > div");
+const cards = document.querySelectorAll("#card > div, .swiper-slide > img");
 console.log(cards);
 
 
